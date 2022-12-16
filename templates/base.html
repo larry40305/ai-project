@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}{% endblock title%}</title>
+    <link rel="icon" href="/static/image/dish.png" type="image/x-icon">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="../static/css/website.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="fixed-top header-transparent">
+        <nav class="navbar top">
+            <div class="container d-flex ">
+                <a class="navbar-brand" href="http://127.0.0.1:5000"><img src="/static/image/dish.png" alt="Logo" width="30px"> 中壢美食介紹</a>
+                    <ul>
+                        <li class="nav-link scrollto">
+                            <a class="nav-link" > 簡介</a>
+                        </li>
+                        <li class="nav-link scrollto">
+                            <a class="nav-link" >服務介紹</a>
+                        </li>
+                        <li class="nav-link scrollto">
+                            <a class="nav-link" >團隊成員</a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+    </header>
+    {% block message %}{% endblock %}
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+.navbar {
+    padding: 0;
+  }
+.top {
+    background-color: rgb(2, 120, 255);
+}
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  .navbar a, .navbar a:focus {
+    display: flex;      
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    margin-left: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    white-space: nowrap;
+    transition: 0.1s;
+  }
+  
+  .navbar a:hover, .navbar .active:focus {
+    background: rgba(255, 255, 255, 0.2);
+  }
