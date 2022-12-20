@@ -17,6 +17,25 @@ img{
   height:auto;
 }
 
+.hero-image {
+  background-image: linear-gradient(rgba(55, 142, 181, 0.5), rgba(55, 142, 181, 0.2)), url("/static/image/foodbackground.jpg");
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+p0{
+  font-size: 25px;
+  color:#ffffff;
+}
 p{
   font-size: 25px;
   color:#6c6c6c;
