@@ -38,7 +38,13 @@ p{
 .h-sub span{
   font-weight:bold;
 }
-
+#contents{
+  box-sizing:border-box;
+  max-width:1200px;
+  margin:40px auto;
+  padding:4% 8%;
+  background-color: #f0f0f0;
+}
 .navbar {
     padding: 0;
   }
