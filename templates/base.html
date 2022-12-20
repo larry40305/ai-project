@@ -3,75 +3,72 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>中壢美食推薦</title>
     <link rel="icon" href="/static/image/dish.png" type="image/x-icon">
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="../static/css/website.css" rel="stylesheet">
+    
+
+    
 </head>
 
 <body>
-    <header class="fixed-top header-transparent">
+    <header class="fixed-top ">
         <nav class="navbar top">
             <div class="container d-flex ">
-                <a class="navbar-brand" href="http://127.0.0.1:5000"><img src="/static/image/dish.png" alt="Logo" width="30px"> 中壢美食介紹</a>
+                <a class="navbar-brand" href="http://127.0.0.1:5000"><img src="/static/image/dish.png" alt="Logo" width="30px">中壢美食介紹</a>
                     <ul>
-                        <li class="nav-link scrollto">
-                            <a class="nav-link" href="#intro"> 簡介</a>
+                        <li>
+                            <a class="nav-link scrollto" href="#intro"> 簡介</a>
                         </li>
-                        <li class="nav-link scrollto">
-                            <a class="nav-link" href="#service">服務介紹</a>
+                        <li >
+                            <a class="nav-link scrollto" href="#serve">服務介紹</a>
                         </li>
-                        <li class="nav-link scrollto">
-                            <a class="nav-link" href="#team">團隊成員</a>
+                        <li >
+                            <a class="nav-link scrollto" href="#team">團隊成員</a>
                         </li>
                     </ul>
             </div>
         </nav>
     </header>
-    <div class="hero-image">
-         <div class="hero-text">
-            <h1>中壢美食介紹</h1>
-            <p0>今天你想吃什麼?</p0 >
-        </div>
-    </div>
 
     
+    <section id="hero">
+        <div class="hero-container" data-aos="fade-up">
+          <h1>中壢美食推薦</h1>
+          <h2>你今天想吃甚麼?</h2>
+        </div>
+    </section>
 
     
     <main id ="contents">
         <section id="intro">
-            <h2 class="h">中壢美食介紹</h2>
+            <div class="section-title" ><h2 class="h"><img src="/static/image/fork.png">中壢美食介紹<img src="/static/image/knife.png"></h2></div>
             <p>
              我們發現剛剛加入中大的學生可能不知道中央附近有甚麼好吃的餐聽，而就算是加入
              中大兩三年的大學生可能也因為選擇障礙需要花上很多時間決定要吃甚麼，所以我們
              希望可以透過推薦餐廳的方式幫助大家探索自己的美食地圖，同時省去決定要吃甚麼
              的時間。
-             <br>
-             <br>
             </p>
         </section>
         <section id="serve">
-          <h2 class="h">服務介紹 </h2>
+            <div class="section-title" ><h2 class="h"><img src="/static/image/fork.png">服務介紹<img src="/static/image/knife.png"></h2></div>
           <div id="fun">
-            <img src="static/image/lineBot.png"  width="100">
+            <img src="static/image/lineBot.png"  width="150px"  style="display:block; margin:auto;">
               <div>
                 <p>我們開發的lineBot會透過你輸入的地點，時間，餐廳類型來推薦給你附近好吃的餐廳。</p>
                 <p>你可以透過下面的教學來使用我們的lineBot</p>
               </div>
-              <br>
-              <br>
             </div>
         </section>
         
-        <section id="serve">
-          <h2 class="h">使用教學 </h2>
+        <section>
+            <div class="section-title" ><h2 class="h">使用教學 </h2></div>
             <p>1.開啟line的好友搜尋輸入ID:@634knlnx並加入好友</p>
-            <img src="static/image/lineBotID.png"  width="350">
+            <img src="static/image/lineBotID.png"  width="350" style="display:block; margin:auto;">
             <p>或著你也可以透過這個QrCode加入</p>
-            <img src="static/image/lineBotQrCode.png"  width="300">
+            <img src="static/image/lineBotQrCode.png"  width="300" style="display:block; margin:auto;">
         </section>
-    </main>
 </body>
 </html>
