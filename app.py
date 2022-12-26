@@ -44,7 +44,7 @@ def handle_postback(event):
     # print(event.postback.data)
     postback_data = dict(parse_qsl(event.postback.data))
     # print(postback_data.get('action', ''))
-    # print(postback_data.get('item', ''))
+    # print(postback_data.get('item',''))
    
 
 
